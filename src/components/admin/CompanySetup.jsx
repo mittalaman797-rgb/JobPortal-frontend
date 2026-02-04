@@ -9,8 +9,10 @@ import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'sonner'
 import { useSelector } from 'react-redux'
-import useGetCompanyById from '@/hooks/useGetCompanyById'
+// import useGetCompanyById from '@/hooks/useGetCompanyById'
+
 import { COMPANY_API_END_POINT } from '@/API/api'
+import useGetCompanyById from '@/hooks/useGetcompanyById'
 
 const CompanySetup = () => {
     
