@@ -36,7 +36,9 @@ const Signup = () => {
     }
 
     const submitHandler = async (e) => {
-        e.preventDefault()
+    
+        try {
+                e.preventDefault()
         const formData = new FormData()
         formData.append("fullname", input.fullname)
         formData.append("email", input.email)
@@ -46,7 +48,6 @@ const Signup = () => {
         if (input.file) {
             formData.append("file", input.file)
         }
-        try {
             dispatch(setLoading(true))
             const res = await axios.post(`${USER_API_END_POINT}/register`, formData, { withCredentials: true })
             if (res.data.success) {
