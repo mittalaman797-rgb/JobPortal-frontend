@@ -6,8 +6,8 @@
 
 // export const COMPANY_API_END_POINT="https://jobportal-backend-yaou-3no2.onrender.com/company"
 
-// const url="http://localhost:5000"
-const url="https://jobportal-backend-yaou-3no2.onrender.com"
+const url="http://localhost:5000"
+// const url="https://jobportal-backend-yaou-3no2.onrender.com"
 
 export default `${url}/auth`
 
