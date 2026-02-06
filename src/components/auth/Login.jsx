@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 import axios from 'axios'
-import { USER_API_END_POINT } from '@/API/api'
+import USER_API_END_POINT from '@/API/api'
 import { useDispatch, useSelector } from 'react-redux'
 import { setLoading,setUser } from '@/redux/authSlice'
 import { Loader2 } from 'lucide-react'
@@ -36,7 +36,7 @@ const Login = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault()
-
+console.log(USER_API_END_POINT,"ll")
         try {
             dispatch(setLoading(true))
             const res = await axios.post(`${USER_API_END_POINT}/login`, input, { withCredentials: true })

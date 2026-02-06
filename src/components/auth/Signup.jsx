@@ -6,7 +6,7 @@ import { RadioGroup } from "@/components/ui/radio-group"
 import { Button } from "@/components/ui/button"
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import { USER_API_END_POINT } from '@/API/api'
+import USER_API_END_POINT from '@/API/api'
 import { toast } from 'sonner'
 import { useDispatch, useSelector } from 'react-redux'
 import { Loader2 } from 'lucide-react'

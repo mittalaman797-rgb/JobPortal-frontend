@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import axios from 'axios'
 import { toast } from 'sonner'
-import { USER_API_END_POINT } from '@/API/api'
+import USER_API_END_POINT from '@/API/api'
 import { setUser } from '@/redux/authSlice'
 
 
